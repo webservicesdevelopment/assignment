@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<properties>
+    <property id='0'>
+        <lister>user1</lister>
+        <location>Sydney</location>
+        <type>whole house</type>
+        <availability>available</availability>
+        <numguests>6</numguests>
+        <address>123 Street</address>
+        <description>[property description]</description>
+        <enquires>
+            <enquiry>
+                <name>Bob</name>
+                <email>bob@email.com</email>
+                <date>18-10-2016</date>
+                <message>[enquiry message]</message>
+            </enquiry>
+        </enquires>
+    </property>
+    
+    <property id='1'>
+        <lister>user1</lister>
+        <location>Melbourne</location>
+        <type>whole unit</type>
+        <availability>available</availability>
+        <numguests>3</numguests>
+        <address>123 Street</address>
+        <description>[property description]</description>
+        <enquires>
+            <enquiry>
+                <name>Fred</name>
+                <email>fred@email.com</email>
+                <date>18-10-2016</date>
+                <message>[enquiry message]</message>
+            </enquiry>
+        </enquires>
+    </property>
+</properties>
