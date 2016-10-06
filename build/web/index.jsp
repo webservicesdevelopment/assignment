@@ -20,8 +20,11 @@
         
         <% if(user != null) { %>
             <p>Welcome, <%= user.getUsername() %></p>
+            <a href="logoutAction.jsp">logout</a>
         <% } else { %>
             <a href="login.jsp">Login</a>
         <% } %>
+        
+        
     </body>
 </html>

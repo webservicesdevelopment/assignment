@@ -16,7 +16,7 @@
     <body>
         <% String usersFilePath = application.getRealPath("WEB-INF/users.xml"); %>
         <jsp:useBean id="rentalApp" class="uts.wsd.RentalApplication" scope="application">
-            <jsp:setProperty name="rentalApp" property="filePath" value="<%=usersFilePath%>"/>
+            <jsp:setProperty name="rentalApp" property="usersFilePath" value="<%=usersFilePath%>"/>
         </jsp:useBean>
         
         
