@@ -5,38 +5,36 @@
  */
 package uts.wsd;
 
+import java.util.*;
 import java.io.Serializable;
-import java.util.ArrayList;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlElementWrapper;
 
 /**
  *
- * @author Carmelo
+ * @author 11238639
  */
-@XmlAccessorType(XmlAccessType.FIELD)
-public class Property implements Serializable {
-    @XmlAttribute(name = "id")
-    private int id;
-    @XmlElement(name = "lister")
-    private String lister;
-    @XmlElement(name = "location")
-    private String location;
-    @XmlElement(name = "type")
-    private String type;
-    @XmlElement(name = "availability")
-    private String availability;
-    @XmlElement(name = "numGuests")
-    private int numGuests;
-    @XmlElement(name = "address")
+public class Property {
+    
     private String address;
-    @XmlElement(name = "description")
+    private String type;
+    private String guestNumber;
+    private String lister;
     private String description;
-    @XmlElementWrapper(name = "enquiries")
-    @XmlElement(name = "enquiry")
-    private ArrayList<Enquiry> enquiries;
+    private String status;
+    private Enquiries enquiries;
+    
+    public Property() {
+        super();
+    }
+    
+    public Property(String address, String type, String guestNumber, String lister, String description, String status) {
+        super();
+        this.address = address;
+        this.type = type;
+        this.guestNumber = guestNumber;
+        this.lister = lister;
+        this.description = description;
+        this.status = status;
+    }
+    
     
 }

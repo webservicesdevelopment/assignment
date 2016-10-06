@@ -5,25 +5,30 @@
  */
 package uts.wsd;
 
+import java.util.*;
 import java.io.Serializable;
-import java.util.ArrayList;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-
 /**
  *
- * @author Carmelo
+ * @author 11238639
  */
-@XmlAccessorType(XmlAccessType.FIELD)
-@XmlRootElement(name = "properties")
-public class Properties implements Serializable {
+public class Properties {
     
-    @XmlElement(name = "property")
-    private ArrayList<Property> list = new ArrayList<>();
+    private ArrayList<Property> properties = new ArrayList<Property>();
     
-    public ArrayList<Property> getList() {
-        return list;
+    public Properties() {
+        super();
     }
+    
+    public ArrayList<Property> getProperties() {
+        return properties;
+    }
+    
+    public void addEnquiry(Property property) {
+        properties.add(property);
+    }
+    
+    public void removeEnquiry(Property property) {
+        properties.remove(property);
+    }
+    
 }

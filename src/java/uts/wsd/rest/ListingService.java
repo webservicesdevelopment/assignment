@@ -10,7 +10,7 @@ import javax.servlet.ServletContext;
 import javax.ws.rs.*;
 import javax.ws.rs.core.*;
 import javax.xml.bind.JAXBException;
-import uts.wsd.Properties;
+import uts.wsd.*;
 import uts.wsd.RentalApplication;
 
 /**

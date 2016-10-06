@@ -5,23 +5,32 @@
  */
 package uts.wsd;
 
-import java.util.Date;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
+import java.util.*;
+import java.io.Serializable;
 
 /**
  *
- * @author Carmelo
+ * @author 11238639
  */
-@XmlAccessorType(XmlAccessType.FIELD)
 public class Enquiry {
-    @XmlElement(name = "name")
-    private String name;
-    @XmlElement(name = "email")
+    
+    private String user;
     private String email;
-    @XmlElement(name = "date")
-    private Date date;
-    @XmlElement(name = "message")
+    private String date;
     private String message;
+    
+    public Enquiry() {
+        super();
+    }
+    
+    public Enquiry(String user, String email, String date, String message) {
+        super();
+        this.user = user;
+        this.email = email;
+        this.date = date;
+        this.message = message;
+    }
+    
+    //only really need getters as enquiries cant be modified once made
+    
 }
