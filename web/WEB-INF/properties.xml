@@ -42,4 +42,22 @@ and open the template in the editor.
             </enquiry>
         </enquires>
     </property>
+    
+    <property id='2'>
+        <lister>user2</lister>
+        <location>Orange</location>
+        <type>house</type>
+        <availability>available</availability>
+        <numguests>5</numguests>
+        <address>123 Street</address>
+        <description>[property description]</description>
+        <enquires>
+            <enquiry>
+                <name>Fred</name>
+                <email>fred@email.com</email>
+                <date>18-10-2016</date>
+                <message>[enquiry message]</message>
+            </enquiry>
+        </enquires>
+    </property>
 </properties>

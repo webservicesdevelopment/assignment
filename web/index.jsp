@@ -14,13 +14,18 @@
     <body>
         <h1>Home</h1>
         
+        
+      
+        
         <%
             User user = (User)session.getAttribute("user");
         %>
         
         <% if(user != null) { %>
             <p>Welcome, <%= user.getUsername() %></p>
-            <a href="logoutAction.jsp">logout</a>
+            <a href="logoutAction.jsp">logout</a>           
+            
+            
         <% } else { %>
             <a href="login.jsp">Login</a>
         <% } %>
