@@ -74,8 +74,9 @@
 
 <div class="content">
     <div class="listings">
-        <h1 style="margin: 40px 0;"> Similar Listings </h1>
-        <c:import var="xml" url="./WEB-INF/properties.xml"/>
+        <c:set var="xml">
+            <% //get an object with the xml for this particular listing%>
+        </c:set>
         <c:import var="xslt" url="properties.xsl"/>
         <x:transform doc="${xml}" xslt="${xslt}"/>
     </div>
