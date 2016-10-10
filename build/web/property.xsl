@@ -23,7 +23,8 @@
             <body>
                 <table style="margin: 0 auto;">
                     <tr>
-                        <td><img src="images/bg.jpg" style="width: 450px; height:300px;"/></td>
+                        <td>
+                        </td>
                         <td valign="">
                             <table>
                                 <tr valign="top">
@@ -51,13 +52,13 @@
                                     <td>
                                         <th class="details">Address</th>
                                     </td>
-                                    <td>
+                                     <td>
                                         <xsl:value-of select="address"/>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                    <th class="details">Type</th>
+                                        <th class="details">Type</th>
                                     </td>
                                     <td>
                                         <xsl:value-of select="type"/>
@@ -76,14 +77,14 @@
                                         <th class="details">Availability</th>
                                     </td>
                                     <td>
-                                    <xsl:value-of select="availability"/>
+                                        <xsl:value-of select="availability"/>
                                     </td>
-                            </tr>		
-                        </table>
-                    </td>
-                </tr>
-            </table>
-        <div class="seperator"></div>  
+                                </tr>		
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <div class="seperator"></div>  
                
             </body>
         </html>
